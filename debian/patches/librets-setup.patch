@@ -1,0 +1,19 @@
+Description: Fix destination directory for setup.py
+ This passes the debian installation layout flag to setup.py
+ .
+ librets (1.5.3-1realgo) unstable; urgency=low
+ .
+   * Initial release
+Author: Sean Reifschneider <sean+packages@realgo.com>
+
+---
+
+--- librets-1.5.3.orig/project/build/python.mk
++++ librets-1.5.3/project/build/python.mk
+@@ -63,5 +63,5 @@ ${PYTHON_DLLx}: ${PYTHON_MAKEFILE} ${LIB
+ endif
+ 	
+ ${PYTHON_INSTALL}: ${PYTHON_DLL}
+-	cd ${PYTHON_OBJ_DIR}; ${PYTHON} setup.py install
++	cd ${PYTHON_OBJ_DIR}; ${PYTHON} setup.py install --install-layout=deb
+ 
