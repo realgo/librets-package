@@ -25,3 +25,6 @@ librets-config-inplace
 librets-config-inplace.in
 librets-config.in
 project
+debian/librets/
+debian/librets-dev.debhelper.log
+debian/librets1.debhelper.log

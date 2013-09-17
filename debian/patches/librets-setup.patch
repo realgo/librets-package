@@ -15,5 +15,5 @@ Author: Sean Reifschneider <sean+packages@realgo.com>
  	
  ${PYTHON_INSTALL}: ${PYTHON_DLL}
 -	cd ${PYTHON_OBJ_DIR}; ${PYTHON} setup.py install
-+	cd ${PYTHON_OBJ_DIR}; ${PYTHON} setup.py install --install-layout=deb
++	cd ${PYTHON_OBJ_DIR}; ${PYTHON} setup.py install --install-layout=deb --root=${DESTDIR}
  
