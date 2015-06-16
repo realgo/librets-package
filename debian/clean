@@ -1,1 +1,6 @@
 config.log
+configure
+project/build/config.guess
+project/build/config.sub
+debian/librets/usr/lib/python*/dist-packages/librets.pyc
+debian/librets/usr/lib/python*/dist-packages/__pycache__/*
