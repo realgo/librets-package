@@ -4,3 +4,7 @@ project/build/config.guess
 project/build/config.sub
 debian/librets/usr/lib/python*/dist-packages/librets.pyc
 debian/librets/usr/lib/python*/dist-packages/__pycache__/*
+config.guess
+config.guess.dh-orig
+config.sub
+config.sub.dh-orig

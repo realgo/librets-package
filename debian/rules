@@ -10,11 +10,10 @@
 #export DH_VERBOSE=1
 
 %:
-	dh $@  --with autotools-dev
+	dh $@ --with autoreconf
 
 override_dh_auto_configure:
-	./autogen.sh
 	dh_auto_configure -- --disable-java --disable-perl --enable-fPIC --enable-shared_dependencies --prefix=/usr/bin
 
-override_dh_auto_install:
-	$(MAKE) DESTDIR=$$(pwd)/debian/librets prefix=/usr install
+#override_dh_auto_install:
+#	$(MAKE) DESTDIR=$$(pwd)/debian/librets prefix=/usr install
