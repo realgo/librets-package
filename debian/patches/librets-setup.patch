@@ -8,9 +8,11 @@ Author: Sean Reifschneider <sean+packages@realgo.com>
 
 ---
 
---- librets-1.5.3.orig/project/build/python.mk
-+++ librets-1.5.3/project/build/python.mk
-@@ -63,5 +63,5 @@ ${PYTHON_DLLx}: ${PYTHON_MAKEFILE} ${LIB
+Index: librets-package/project/build/python.mk
+===================================================================
+--- librets-package.orig/project/build/python.mk	2014-04-06 10:19:35.000000000 -0600
++++ librets-package/project/build/python.mk	2015-06-16 10:11:58.000000000 -0600
+@@ -63,5 +63,5 @@
  endif
  	
  ${PYTHON_INSTALL}: ${PYTHON_DLL}

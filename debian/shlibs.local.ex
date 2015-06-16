@@ -1,1 +1,1 @@
-liblibrets 1.5.3 librets (>> 1.5.3-0), librets (<< 1.5.3-99)
+liblibrets 1.6.1 librets (>> 1.6.1-0), librets (<< 1.6.1-99)

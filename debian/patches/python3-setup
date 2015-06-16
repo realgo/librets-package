@@ -1,0 +1,21 @@
+Description: Fix setup.py for python3.
+ TODO: Specify the args for debian packaging to setup.py for python3.
+ .
+ librets (1.6.1-1realgo) unstable; urgency=low
+ .
+   * Initial release
+Author: Sean Reifschneider <sean+packages@realgo.com>
+
+---
+
+Index: librets-package/project/build/python3.mk
+===================================================================
+--- librets-package.orig/project/build/python3.mk	2015-06-16 14:07:21.000000000 -0600
++++ librets-package/project/build/python3.mk	2015-06-16 14:07:21.000000000 -0600
+@@ -66,5 +66,5 @@
+ endif
+ 
+ ${PYTHON3_INSTALL}: ${PYTHON3_DLL}
+-	cd ${PYTHON3_OBJ_DIR}; ${PYTHON3} setup.py install
++	cd ${PYTHON3_OBJ_DIR}; ${PYTHON3} setup.py install --install-layout=deb --root=${DESTDIR}
+ 

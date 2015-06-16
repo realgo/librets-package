@@ -13,7 +13,18 @@
 	dh $@  --with autotools-dev
 
 override_dh_auto_configure:
+	./autogen.sh
 	dh_auto_configure -- --disable-java --disable-perl --enable-fPIC --enable-shared_dependencies --prefix=/usr/bin
+#	dh_auto_configure -- --disable-java --disable-perl --enable-fPIC --enable-shared_dependencies --prefix=/usr/bin --disable-python3
 
 override_dh_auto_install:
 	$(MAKE) DESTDIR=$$(pwd)/debian/librets prefix=/usr install
+	pwd
+
+override_dh_clean:
+	rm -f configure
+	rm -f project/build/config.guess
+	rm -f project/build/config.sub
+	rm -f debian/librets/usr/lib/python*/dist-packages/librets.pyc
+	rm -f debian/librets/usr/lib/python*/dist-packages/__pycache__/*
+	dh_clean
