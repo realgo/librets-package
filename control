@@ -1,23 +1,21 @@
 Source: librets
 Priority: extra
 Maintainer: Sean Reifschneider <sean+packages@realgo.com>
-Build-Depends: debhelper, python-dev, libexpat1-dev, libcurl4-openssl-dev, libboost-dev, libboost-filesystem-dev, libantlr-dev, swig, libcppunit-dev, dh-autoreconf
+Build-Depends: debhelper, python-all, libexpat1-dev, libcurl4-openssl-dev, libboost-dev, libboost-filesystem-dev, libantlr-dev, swig, libcppunit-dev, dh-autoreconf, dh-python
 Standards-Version: 3.9.5
 Section: libs
 Homepage: http://www.crt.realtors.org/projects/rets/librets/
-#Vcs-Git: git://git.debian.org/collab-maint/librets.git
-#Vcs-Browser: http://git.debian.org/?p=collab-maint/librets.git;a=summary
 
 Package: librets-dev
 Section: libdevel
 Architecture: any
-Depends: librets1 (= ${binary:Version})
+Depends: librets1 (= ${binary:Version}), ${misc:Depends}
 Description: Development files for RETS library.
 
 Package: librets1
 Section: libs
 Architecture: any
-Depends: ${shlibs:Depends}, ${misc:Depends}
+Depends: ${shlibs:Depends}, ${misc:Depends}, ${python:Depends}
 Description: RETS (Real Estate Transaction Standard) client library
  libRETS is RETS client library written in C++ that allows rapid development
  of RETS client applications. By saving the developer from dealing with the
