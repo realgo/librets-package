@@ -27,7 +27,7 @@ Sample run:
     mv 1.6.1.tar.gz librets_1.6.1.orig.tar.gz
     mkdir librets-package
     cd librets-package
-    git clone git@github.com:realgo/librets-package.git debian
+    git clone http://github.com/realgo/librets-package.git debian
     tar xf ../librets_1.6.1.orig.tar.gz --strip-components=1
     debuild
     cd ..
