@@ -2,7 +2,7 @@ Source: librets
 Priority: extra
 Maintainer: Sean Reifschneider <sean+packages@realgo.com>
 Build-Depends: debhelper, python-dev, libexpat1-dev, libcurl4-openssl-dev, libboost-dev, libboost-filesystem-dev, libantlr-dev, swig, libcppunit-dev, dh-autoreconf
-Standards-Version: 3.9.4
+Standards-Version: 3.9.5
 Section: libs
 Homepage: http://www.crt.realtors.org/projects/rets/librets/
 #Vcs-Git: git://git.debian.org/collab-maint/librets.git
