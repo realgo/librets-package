@@ -5,8 +5,8 @@ export DH_VERBOSE=1
 %:
 	dh $@ --with autoreconf
 
-override_dh_auto_configure:
-	dh_auto_configure -- --disable-java --disable-perl --enable-fPIC --enable-shared_dependencies
+#override_dh_auto_configure:
+#	dh_auto_configure -- --disable-java --disable-perl --enable-shared_dependencies
 
 #override_dh_auto_install:
 #	$(MAKE) DESTDIR=$$(pwd)/debian/librets prefix=/usr install
