@@ -9,8 +9,15 @@ and the libRETS source, you should be able to build "librets1" and
 This has been developed on Ubuntu 14.04, and should work on any recent
 Ubuntu or Debian release.
 
-Usage
------
+PPA
+---
+
+There is a PPA at:
+
+    https://launchpad.net/~sysadm-k/+archive/ubuntu/librets
+
+Building
+--------
 
 Steps to build deb files:
 
