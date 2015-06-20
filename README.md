@@ -12,7 +12,7 @@ Ubuntu or Debian release.
 PPA
 ---
 
-There is a PPA at:
+There is a PPA for Ubuntu Trusty at:
 
     https://launchpad.net/~sysadm-k/+archive/ubuntu/librets
 
