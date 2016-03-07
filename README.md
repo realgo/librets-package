@@ -27,33 +27,43 @@ Steps to build deb files:
 
 - Download the libRETS tar file from the above URL
 
-    wget https://github.com/NationalAssociationOfRealtors/libRETS/archive/1.6.1.tar.gz
+```bash
+wget https://github.com/NationalAssociationOfRealtors/libRETS/archive/1.6.1.tar.gz
+```
 
 - Rename into Debian-compatible format
 
-    mv 1.6.1.tar.gz librets_1.6.1.orig.tar.gz
-    #  or:
-    mv libRETS-1.6.1.tar.gz librets_1.6.1.orig.tar.gz
+```bash
+mv 1.6.1.tar.gz librets_1.6.1.orig.tar.gz
+#  or:
+mv libRETS-1.6.1.tar.gz librets_1.6.1.orig.tar.gz
+```
 
 - Extract tar file
 
-    tar xf librets_1.6.1.orig.tar.gz
+```bash
+tar xf librets_1.6.1.orig.tar.gz
+```
 
 - Clone this repository to "debian" sub-directory
 
-    cd libRETS-1.6.1
-    git clone https://github.com/realgo/librets-package debian
+```bash
+cd libRETS-1.6.1
+git clone https://github.com/realgo/librets-package debian
+```
 
 - Run "debuild".
 - Deb files should be in parent directory.
 
 Sample run:
 
-    wget https://github.com/NationalAssociationOfRealtors/libRETS/archive/1.6.1.tar.gz
-    mv 1.6.1.tar.gz librets_1.6.1.orig.tar.gz
-    tar xf librets_1.6.1.orig.tar.gz
-    cd libRETS-1.6.1
-    git clone https://github.com/realgo/librets-package debian
-    debuild
-    cd ..
-    sudo dpkg -i *.deb
+```bash
+wget https://github.com/NationalAssociationOfRealtors/libRETS/archive/1.6.1.tar.gz
+mv 1.6.1.tar.gz librets_1.6.1.orig.tar.gz
+tar xf librets_1.6.1.orig.tar.gz
+cd libRETS-1.6.1
+git clone https://github.com/realgo/librets-package debian
+debuild
+cd ..
+sudo dpkg -i *.deb
+```
