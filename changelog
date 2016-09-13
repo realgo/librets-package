@@ -1,5 +1,5 @@
-librets (1.6.1-1realgo2) trusty; urgency=low
+librets (1.6.2-1realgo1) trusty; urgency=low
 
   * Initial release
 
- -- Sean Reifschneider <sean+packages@realgo.com>  Tue, 16 Jun 2015 09:38:55 -0600
+ -- Sean Reifschneider <sean+packages@realgo.com>  Tue, 30 Aug 2016 13:57:25 -0600

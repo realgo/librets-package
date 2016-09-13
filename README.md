@@ -19,36 +19,34 @@ There is a PPA for Ubuntu Trusty at:
 Building
 --------
 
-NOTE: This asumes the 1.6.1 version.  If you are building a different version,
+NOTE: This asumes the 1.6.2 version.  If you are building a different version,
 Change the version number in the commands below and **ALSO** change
-"debian/changelog" where it says "1.6.1" to the version you are building.
+"debian/changelog" where it says "1.6.2" to the version you are building.
 
 Steps to build deb files:
 
 - Download the libRETS tar file from the above URL
 
 ```bash
-wget https://github.com/NationalAssociationOfRealtors/libRETS/archive/1.6.1.tar.gz
+wget https://github.com/NationalAssociationOfRealtors/libRETS/archive/1.6.2.tar.gz
 ```
 
 - Rename into Debian-compatible format
 
 ```bash
-mv 1.6.1.tar.gz librets_1.6.1.orig.tar.gz
-#  or:
-mv libRETS-1.6.1.tar.gz librets_1.6.1.orig.tar.gz
+mv 1.6.2.tar.gz librets_1.6.2.orig.tar.gz
 ```
 
 - Extract tar file
 
 ```bash
-tar xf librets_1.6.1.orig.tar.gz
+tar xf librets_1.6.2.orig.tar.gz
 ```
 
 - Clone this repository to "debian" sub-directory
 
 ```bash
-cd libRETS-1.6.1
+cd libRETS-1.6.2
 git clone https://github.com/realgo/librets-package debian
 ```
 
@@ -58,10 +56,10 @@ git clone https://github.com/realgo/librets-package debian
 Sample run:
 
 ```bash
-wget https://github.com/NationalAssociationOfRealtors/libRETS/archive/1.6.1.tar.gz
-mv 1.6.1.tar.gz librets_1.6.1.orig.tar.gz
-tar xf librets_1.6.1.orig.tar.gz
-cd libRETS-1.6.1
+wget https://github.com/NationalAssociationOfRealtors/libRETS/archive/1.6.2.tar.gz
+mv 1.6.2.tar.gz librets_1.6.2.orig.tar.gz
+tar xf librets_1.6.2.orig.tar.gz
+cd libRETS-1.6.2
 git clone https://github.com/realgo/librets-package debian
 debuild
 cd ..
