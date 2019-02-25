@@ -2,9 +2,9 @@ Debian Packages for libRETS
 ===========================
 
 This is a set of Debian packaging files for libRETS
-(http://nationalassociationofrealtors.github.io/libRETS/).  Using these
-and the libRETS source, you should be able to build "librets1" and
-"librets-dev" packages.
+( https://github.com/NationalAssociationOfRealtors/libRETS/releases ).
+Using these and the libRETS source, you should be able to build
+"librets1" and "librets-dev" packages.
 
 This has been developed on Ubuntu 14.04, and should work on any recent
 Ubuntu or Debian release.
