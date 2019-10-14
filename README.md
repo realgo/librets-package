@@ -79,5 +79,6 @@ installed.  You can also run the container to copy off the deb files from the
 container:
 
 ```docker run --name librets-packages ubuntu-librets:1.6.4
-docker cp librets-packages:build/* .
+docker cp librets-packages:build/librets1_1.6.4-1realgo1_amd64.deb .
+docker cp librets-packages:build/librets-dev_1.6.4-1realgo1_amd64.deb .
 docker kill librets-packages```
