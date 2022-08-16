@@ -3,7 +3,7 @@ ARG LIBRETS_VERSION
 
 FROM ubuntu:$UBUNTU_VERSION AS builder
 
-ENV LIBRETS_VERSION=${LIBRETS_VERSION:-1.6.4}
+ENV LIBRETS_VERSION=${LIBRETS_VERSION:-1.6.5}
 
 RUN apt -y update
 RUN apt -y install wget devscripts

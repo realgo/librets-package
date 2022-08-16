@@ -1,7 +1,7 @@
 Source: librets
 Priority: extra
 Maintainer: Sean Reifschneider <sean+packages@realgo.com>
-Build-Depends: debhelper (>= 7), python-dev, python3-dev, python-all, python3-all, libexpat1-dev, libcurl4-openssl-dev, libboost-dev, libboost-filesystem-dev, libantlr-dev, swig, libcppunit-dev, dh-autoreconf, dh-python, openjdk-7-jre-headless | openjdk-7-jre  | default-jre-headless | default-jdk-headless
+Build-Depends: debhelper (>= 7), python3-dev, python3-all, libexpat1-dev, libcurl4-openssl-dev, libboost-dev, libboost-filesystem-dev, libantlr-dev, swig, libcppunit-dev, dh-autoreconf, dh-python, openjdk-7-jre-headless | openjdk-7-jre  | default-jre-headless | default-jdk-headless
 Standards-Version: 3.9.5
 Section: libs
 Homepage: http://www.crt.realtors.org/projects/rets/librets/
