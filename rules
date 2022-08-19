@@ -6,7 +6,7 @@ export DH_VERBOSE=1
 	dh $@ --with autoreconf --with python3
 
 override_dh_auto_configure:
-	dh_auto_configure -- --enable-shared_dependencies
+	dh_auto_configure -- --enable-shared_dependencies --disable-ruby
 
 override_dh_install:
 	dh_install
