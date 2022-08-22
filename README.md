@@ -9,15 +9,25 @@ Using these and the libRETS source, you should be able to build
 This has been developed on Ubuntu 14.04, and should work on any recent
 Ubuntu or Debian release.
 
-PPA
----
-
-There is a PPA for Ubuntu Trusty at:
-
-    https://launchpad.net/~sysadm-k/+archive/ubuntu/librets
-
 Building
 --------
+
+WARNING: Once Debian Testing updates from Python 3.10 to something newer,
+this will no longer work.
+
+The upstream has some issues with building under Ubuntu 22.04.  To build
+for 22.04:
+
+- Clone https://github.com/linsomniac/libRETS
+- Run "docker build -t librets ."
+- Run: "docker run -v /tmp/deb:/tmp/deb -it librets:latest /bin/bash"
+- Run: "cp *.deb /tmp/deb"
+- Run: "exit"
+
+The packages should now be in "/tmp/deb" on your system.
+
+Building (Legacy)
+-----------------
 
 NOTE: This asumes the 1.6.5 version.  If you are building a different version,
 Change the version number in the commands below and **ALSO** change
